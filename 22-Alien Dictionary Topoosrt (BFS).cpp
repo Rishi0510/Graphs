@@ -55,6 +55,7 @@ class Solution{
                 if(s1[ptr] != s2[ptr])
                 {
                     adj[s1[ptr]-'a'].push_back(s2[ptr]-'a');
+                    break;
                 }
             }
         }
@@ -65,7 +66,6 @@ class Solution{
         ans += char(it + 'a'); // we subtracted a so now add it
         
         return ans;
-        
         
     }
 };
